@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game of Life - p5.js</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.9.0/lib/p5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.9.0/lib/addons/p5.sound.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="theme-selector">
+        <label for="themeSelect">Theme:</label>
+        <select id="themeSelect">
+            <option value="space" selected>Space</option>
+            <option value="medieval">Medieval</option>
+        </select>
+        <label style="margin-left:2em;">
+            <input type="checkbox" id="soundToggle">
+            Sound
+        </label>
+        <label style="margin-left:2em;">
+            <input type="checkbox" id="colorMixToggle" checked>
+            Color Mixing
+        </label>
+    </div>
+    <h1>Game of Life (p5.js)</h1>
+    <div>
+        <button id="startPauseBtn">Start</button>
+        <button id="stopBtn" style="display:none;">Stop</button>
+        <button id="penBtn" class="active">Pen</button>
+        <input type="color" id="penColor" value="#ffffff" style="vertical-align: middle; width: 2em; height: 2em; border: none; margin-left: 0.5em;">
+        <button id="eraserBtn">Eraser</button>
+        <button id="clearBtn">Clear Grid</button>
+    </div>
+    <main></main>
+</body>
+</html>
