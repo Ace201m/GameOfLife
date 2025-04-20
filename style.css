@@ -1,0 +1,89 @@
+body {
+  background: #2d1a0b url('https://www.transparenttextures.com/patterns/wood-pattern.png');
+  color: #f3e9d2;
+  font-family: 'MedievalSharp', cursive;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 8px #000, 0 0 10px #bfa76f;
+}
+
+div > button {
+  font-family: 'MedievalSharp', cursive;
+  font-size: 1.2em;
+  background: linear-gradient(145deg, #bfa76f 60%, #7c5e2c 100%);
+  color: #2d1a0b;
+  border: 3px solid #7c5e2c;
+  border-radius: 8px;
+  margin: 0.5em 0.3em;
+  padding: 0.5em 1.5em;
+  box-shadow: 2px 2px 8px #0008;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+}
+
+div > button.active, div > button:hover {
+  background: linear-gradient(145deg, #7c5e2c 60%, #bfa76f 100%);
+  color: #fffbe6;
+  border: 3px solid #bfa76f;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+canvas {
+  border: 6px ridge #bfa76f;
+  background: #3b2612;
+  box-shadow: 0 0 32px #000a;
+}
+
+body.medieval {
+  background: #2d1a0b url('https://www.transparenttextures.com/patterns/wood-pattern.png');
+  color: #f3e9d2;
+  font-family: 'MedievalSharp', cursive;
+}
+
+body.space {
+  background: #0a0a2a url('https://www.transparenttextures.com/patterns/stardust.png');
+  color: #e0e6ff;
+  font-family: 'Arial Rounded MT Bold', Arial, sans-serif;
+}
+
+.theme-selector {
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+
+body.space h1 {
+  text-shadow: 0 0 16px #00eaff, 0 0 32px #fff;
+  color: #fff;
+}
+
+body.space div > button {
+  background: linear-gradient(145deg, #1e2a78 60%, #00eaff 100%);
+  color: #fff;
+  border: 3px solid #00eaff;
+}
+
+body.space div > button.active, body.space div > button:hover {
+  background: linear-gradient(145deg, #00eaff 60%, #1e2a78 100%);
+  color: #0a0a2a;
+  border: 3px solid #fff;
+}
+
+body.space canvas {
+  border: 6px ridge #00eaff;
+  background: #111144;
+  box-shadow: 0 0 32px #00eaff88;
+}
